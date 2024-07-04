@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reseñas.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h2>Lista de Reseñas</h2>
+    <ul>
+        {% for reseña in object_list %}
+            <li>
+                <a href="{% url 'reseñas:reseña-detail' reseña.pk %}">{{ reseña.titulo }}</a> - {{ reseña.serie.titulo }} (Capítulo: {{ reseña.capitulo.titulo }})
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'reseñas:reseña-create' %}">Añadir Nueva Reseña</a>
+{% endblock %}

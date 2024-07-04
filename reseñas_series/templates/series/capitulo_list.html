@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Lista de Capítulos</h2>
+    <ul>
+    {% for capitulo in object_list %}
+        <li>
+            <a href="{% url 'series:capitulo-detail' capitulo.pk %}">{{ capitulo }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'series:capitulo-create' %}">Crear nuevo capítulo</a>
+{% endblock %}

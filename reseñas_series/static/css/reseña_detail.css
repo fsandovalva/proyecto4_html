@@ -1,0 +1,44 @@
+/* Estilo para el contenedor principal */
+.review-container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde del contenedor */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilo para el título de la reseña */
+.review-title {
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Estilo para el contenido de la reseña */
+.review-content {
+    line-height: 1.6; /* Altura de línea */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo para la información adicional */
+.review-info {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    color: #666; /* Color de texto gris */
+}
+
+/* Estilo para el botón de editar reseña */
+.edit-review-btn {
+    display: inline-block; /* Mostrar como bloque */
+    padding: 10px 20px; /* Relleno interno */
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    border: none; /* Quitar borde */
+    border-radius: 4px; /* Borde redondeado */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+.edit-review-btn:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}

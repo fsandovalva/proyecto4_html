@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Eliminar Reseña</h2>
+    <p>¿Estás seguro de que quieres eliminar la reseña "{{ object.titulo }}"?</p>
+    <form method="post">{% csrf_token %}
+    <button type="submit">Confirmar Eliminación</button>
+    <a href="{% url 'serie_detail' object.serie.pk %}">Cancelar</a>
+    </form>
+{% endblock %}

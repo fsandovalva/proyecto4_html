@@ -1,0 +1,36 @@
+/* Estilos generales para la lista de reseñas */
+ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Espacio entre cada elemento de la lista */
+    padding: 10px;
+    background-color: #f9f9f9; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde del elemento */
+}
+
+li a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos para el enlace "Añadir Nueva Reseña" */
+.add-review-link {
+    display: block; /* Mostrar como bloque para ocupar ancho completo */
+    margin-top: 20px; /* Espacio superior */
+    padding: 10px;
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+.add-review-link:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}

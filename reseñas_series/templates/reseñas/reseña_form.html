@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Escribir Reseña</h2>
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+    </form>
+    <script src="{% static 'js/obtener_cap.js' %}"></script>
+{% endblock %}

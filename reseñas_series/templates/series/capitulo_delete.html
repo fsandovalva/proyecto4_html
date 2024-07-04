@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Eliminar Capítulo</h2>
+    <p>¿Estás seguro de que quieres eliminar el capítulo "{{ object.titulo }}"?</p>
+    <form method="post">{% csrf_token %}
+    <button type="submit">Confirmar Eliminación</button>
+    <a href="{% url 'series:serie-detail' object.serie.pk %}">Cancelar</a>
+    </form>
+{% endblock %}
